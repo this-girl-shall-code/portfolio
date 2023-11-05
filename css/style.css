@@ -1,0 +1,206 @@
+:root {
+    --main-color: #c57ff3;
+    --main-color-shadow: #7b4e9899;
+}
+
+* {
+    color: white;
+}
+
+body {
+    background-color: #1A1A12;
+}
+
+section {
+  padding-top: 90px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+} 
+
+section h2 {
+    padding-bottom: 40px;
+}
+
+
+/* -----------------------------------Nav Bar------------------------------------------------------ */
+
+.customNav {
+    position: fixed;
+    width: 100%;
+    height: 76px;
+    top: 0;
+    background-color:  var(--main-color) !important;
+    z-index: 1;
+}
+
+.customNav > div {
+    background-color:  var(--main-color) !important;
+
+}
+
+.navbar-brand {
+    font-size: 1.6rem;
+}
+
+.navbar-collapse  {
+    background-color:  var(--main-color) !important;
+}
+
+.nav-link {
+    font-size: 1.2rem;
+    margin-right: 1rem;
+    border-bottom: 1px solid #1A1A12;
+}
+
+.nav-link:hover, .navbar-brand:hover {
+    color: white !important;
+    border-color: white;
+}
+
+
+/* -----------------------------------Hero / Jumbotron------------------------------------------------------ */
+
+.jumbo {
+    background-color: #1A1A12 !important; 
+    background-image: url("../images/colourful-banner3.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: calc(100vh - 76px);
+    border-radius: 0 !important;
+    display: flex;
+    align-items: center;
+    position: relative;
+    top: 76px;
+}
+
+.jumbo > div > div {
+    background-color: rgba(28, 28, 18, 0.8) !important; 
+    border-radius: 5px;
+}
+
+.jumbo a {
+    text-decoration: none;
+}
+
+
+/* -----------------------------------Skills------------------------------------------------------ */
+#skills > h2 {
+    padding-bottom: 80px;
+}
+
+#skills > div > div {
+   font-size: 1.5rem;
+}
+
+.skills-box {
+    border: 4px solid var(--main-color);
+    border-radius: 5px;
+}
+
+
+/* -----------------------------------Work------------------------------------------------------ */
+
+.card {
+    border-color: rgb(28, 28, 18);
+    min-height: 31rem;
+    border: 4px solid var(--main-color);
+}
+
+.card img {
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+}
+
+.card a:hover {
+    box-shadow: 15px 5px 15px var(--main-color-shadow);
+}
+
+.card p {
+    color: black;
+}
+
+.card-body {
+    background-color:  rgba(198, 129, 243, 0.4)
+}
+
+/* -----------------------------------About me / Contact me------------------------------------------------------ */
+
+#contact-me {
+    margin-bottom: 50px;
+    font-size: 20px;
+}
+
+#contact-me ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px;
+    list-style-type: none;
+}
+
+#contact-me li {
+    padding: 10px;
+}
+
+li span {
+    font-weight: 900;
+}
+
+
+#contact-me i {
+    font-size: 30px;
+}
+
+#contact-me i:hover {
+    transform: scale(1.3);
+}
+
+/* -----------------------------------Footer------------------------------------------------------ */
+
+footer {
+    background-color:  var(--main-color);
+    height: 70px;
+}
+
+footer div {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+footer i {
+    margin: 20px;
+    justify-content: center;
+    font-size: 30px;
+}
+
+footer i:hover {
+    transform: scale(1.3);
+    background-image: linear-gradient(to bottom right, var(--main-color) 85%, var(--main-color-shadow) 15%);
+    box-shadow: 15px 15px 15px var(--main-color-shadow);
+}
+
+/* -----------------------------------Media Query------------------------------------------------------ */
+
+@media only screen and (max-width: 576px) {
+.jumbo {
+    padding-left: 5px !important;
+}
+
+.jumbo > div > div {
+    min-width: 380px;
+    transform: scale(0.9);
+}
+
+#skills > h2 {
+    padding-bottom: 40px;
+}
+
+.card {
+    margin-bottom: 5px !important;
+}
+
+}

@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="https://kit.fontawesome.com/63eefc4fba.js" crossorigin="anonymous"></script>
+
+    <title>Bootstrap Portfolio</title>
+</head>
+
+<body>
+
+    <!-----------------------------------Nav Bar------------------------------------------------------>
+    
+    <nav class="navbar navbar-expand-lg bg-body-tertiary customNav">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">My Portfolio</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" href="#skills">Skills</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#work">Work</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#contact-me">Contact Me</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+    </nav>
+
+    <!-----------------------------------Hero / Jumbotron------------------------------------------------------>
+
+    <div class="p-5 mb-4 bg-body-tertiary rounded-3 jumbo">
+        <div class="container-fluid py-5">
+            <div class="row col-8 p-3">
+                <h1 class="display-5 fw-bold">Hi! 👋 I'm this_girl_shall_code</h1>
+                <h2 class="fw-bold">Welcome to my portfolio</h2>
+                <p class="fs-4">I hope you enjoy looking around and getting to know me. Be sure to check out my projects for a bit of fun 🎮 and get in touch if you'd like to know more</p>
+                <a href="#contact-me" class="btn btn-primary btn-lg col-6">Contact details</a>
+            </div>
+        </div>
+    </div>
+
+    <!-----------------------------------Skills------------------------------------------------------>
+
+    <section id="skills">
+        <h2>Skills</h2>
+
+        <div class="container-fluid text-center">
+            <div class="row g-3">
+                <div class="col-lg-5 col-sm-12 p-3 m-md-auto my-md-4 skills-box">HTML</div>
+                <div class="col-lg-5 col-sm-12 p-3 m-md-auto my-md-4 skills-box">CSS</div>
+                <div class="col-lg-5 col-sm-12 p-3 m-md-auto my-md-4 skills-box">Bootstrap</div>
+                <div class="col-lg-5 col-sm-12 p-3 m-md-auto my-md-4 skills-box">JavaScript</div>
+                <div class="col-lg-5 col-sm-12 p-3 m-md-auto my-md-4 skills-box">**********</div>
+                <div class="col-lg-5 col-sm-12 p-3 m-md-auto my-md-4 skills-box">**********</div>
+            </div>
+        </div>
+
+    </section>
+
+
+    <!-----------------------------------Work------------------------------------------------------>
+
+    <section id="work">
+        <h2>Work</h2>
+
+        <div class="container-fluid">
+            <div class="row ms-3 me-3">
+                
+                <!-- card 1 -->
+                <div class="cardContainer col-lg-4 col-sm-12 my-lg-5 my-sm-4">
+                    <div class="card">
+                        <img src="./images/snake2.jpg" class="card-img-top" alt="snake game board">
+                        <div class="card-body">
+                        <h5 class="card-title">Snake Game</h5>
+                        <p class="card-text">The classic Snake game. This game was created using the YouTube tutorial by Web Dev Simplified - 'How To Code The Snake Game In Javascript'.</p>
+                        <a href="https://this-girl-shall-code.github.io/Snake/" target="_blank" class="btn btn-primary">Play Snake</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- card 2 -->
+                <div class="cardContainer col-lg-4 col-sm-12 my-lg-5 my-sm-4">
+                    <div class="card">
+                        <img src="./images/drum-kit.JPG" class="card-img-top" alt="keyboard drum kit">
+                        <div class="card-body">
+                        <h5 class="card-title">Drum Kit</h5>
+                        <p class="card-text">A drum kit you can use with your keyboard! See how much noise you can make 🥁. This was a project from the Wes Bos' JavaScript 30 course - a 30 day vanilla JS coding challenge.</p>
+                        <a href="https://this-girl-shall-code.github.io/DrumKit/" target="_blank" class="btn btn-primary">Come make some noise!</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- card 3 -->
+                <div class="cardContainer col-lg-4 col-sm-12 my-lg-5 my-sm-4">
+                    <div class="card">
+                        <img src="./images/pig-dice-game.JPG" class="card-img-top" alt="2 player dice game board">
+                        <div class="card-body">
+                        <h5 class="card-title">Pig Dice Game</h5>
+                        <p class="card-text">A simple 2 player dice game where the first player to score 100 or more points wins. But beware, you don't want to roll a 1!</p>
+                        <a href="https://this-girl-shall-code.github.io/PigDiceGame/" target="_blank" class="btn btn-primary">Roll the dice</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="row ms-3 me-3">
+                <!-- card 4 -->
+                <div class="cardContainer4 col-lg-4 col-sm-12 my-lg-5 my-sm-4 ms-auto">
+                    <div class="card">
+                        <img src="./images/breathe-app22.jpg" class="card-img-top" alt="breathing counting circle">
+                        <div class="card-body">
+                        <h5 class="card-title">Breathe App</h5>
+                        <p class="card-text">A breathing app that uses JS to count breaths in and out, useful for meditation and to de-stress. This app was created as part of a group project for the CodeFirstGirls Intro to JS course.</p>
+                        <a href="https://this-girl-shall-code.github.io/BreatheApp/" target="_blank" class="btn btn-primary">Take a breather</a>
+                        </div>
+                    </div>
+                </div>  
+
+                <!-- card 5 -->
+                <div class="cardContainer5 col-lg-4 col-sm-12 my-lg-5 my-sm-4 me-auto">
+                    <div class="card">
+                        <img src="./images/scrambled-words2.JPG" class="card-img-top" alt="scrambled word guessing box">
+                        <div class="card-body">
+                        <h5 class="card-title">Scrambled Words</h5>
+                        <p class="card-text">A project completed as part of the CodeFirstGirls Intro to JS course. We were tasked to create a web app that takes input from the user and updates the
+                            web page based on the input using JS.</p>
+                        <a href="https://codepen.io/this_girl_shall_code/full/ExOWJNj" target="_blank" class="btn btn-primary">Can you decipher the word?</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    
+    </section>
+
+    <!-----------------------------------About me / Contact me------------------------------------------------------>
+
+    <section id="contact-me">
+        <h2>Contact me</h2>
+        <ul>
+            <li><span>Email: </span>******@******.com</a></li>
+            <li><span>Phone: </span>00000000000000</li>
+        </ul>
+        <a href="#"><i class="fa-solid fa-angles-up" alt="2 upward chevrons"></i></a>
+
+    </section>
+
+    <!-----------------------------------Footer------------------------------------------------------>
+    
+    <footer>
+        <div>
+            <a href="https://www.linkedin.com/" target="_blank"><i class="fa-brands fa-linkedin-in" alt="linkedin logo"></i></a>
+            <a href="https://github.com/this-girl-shall-code" target="_blank"><i class="fa-brands fa-github" alt="github logo"></i></a>
+            <a href="https://www.instagram.com/this_girl_shall_code/" target="_blank"><i class="fa-brands fa-instagram" alt="instagram logo"></i></a>
+        </div>
+
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+</body>
+
+
+</html>
